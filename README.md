@@ -84,3 +84,12 @@ async fn main() {
     println!("{}", topic);
 }
 ```
+
+### kafka
+https://github.com/dxfrontiers/rust-microservice-kafka/blob/master/src/kafka.rs
+
+
+
+### Microservices
+https://github.com/Dmdv/rust-microservice-actix
+https://github.com/Dmdv/rust-microservice-kafka
