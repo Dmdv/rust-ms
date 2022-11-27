@@ -1,0 +1,18 @@
+[package]
+name = "nats-rs-consumer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+futures = "0.3.25"
+tokio = { version = "1.22.0", features = ["full"] }
+async-nats = "0.24.0"
+
+[[bin]]
+name = "nats-rs-consumer"
+path = "src/main-consumer.rs"
+
+[[bin]]
+name = "nats-rs-consumer-publisher"
+path = "src/main-consumer-publisher.rs"
