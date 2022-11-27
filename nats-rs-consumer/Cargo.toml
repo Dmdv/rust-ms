@@ -16,3 +16,7 @@ path = "src/main-consumer.rs"
 [[bin]]
 name = "nats-rs-consumer-publisher"
 path = "src/main-consumer-publisher.rs"
+
+[[bin]]
+name = "nats-rs-request-reply"
+path = "src/main-reply-request.rs"
