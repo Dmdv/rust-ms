@@ -20,3 +20,7 @@ path = "src/main-consumer-publisher.rs"
 [[bin]]
 name = "nats-rs-request-reply"
 path = "src/main-reply-request.rs"
+
+[[bin]]
+name = "nats-rs-worker"
+path = "src/main-worker.rs"
