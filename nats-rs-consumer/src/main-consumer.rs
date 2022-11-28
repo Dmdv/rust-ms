@@ -10,7 +10,11 @@ async fn main() -> Result<(), async_nats::Error> {
         .unwrap_or_else(|_| "nats://localhost:4222".to_string());
 
     let client = async_nats::connect(nats_url).await?;
-    let subscription = client.subscribe("greet.*".to_string()).await?;
+    // let subscription = client.subscribe("greet.*".to_string()).await?;
+    let subscription = client.queue_subscribe(
+        "greet.*".to_string(),
+        "demo".to_string())
+        .await?;
 
     subscription
         .for_each_concurrent(25, |message| async move {
